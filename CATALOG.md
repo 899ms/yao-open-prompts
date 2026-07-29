@@ -25,7 +25,7 @@
 | AI方法 | 元提示词 | [智能元提示词生成系统](prompts/01-ai-methods/interactive-rtf-meta-prompt-system.md) | active | 元提示词 |
 | AI方法 | 元提示词 | [LISP结构化元提示词系统 V0.8](prompts/01-ai-methods/lisp-rtf-meta-prompt-v08.md) | active | 元提示词 |
 | AI方法 | 元提示词 | [元提示词：生成提示词的提示词](prompts/01-ai-methods/meta-prompt-rtf-generator.md) | active | 元提示词 |
-| AI方法 | 元提示词 | [智能元提示词生成系统 V0.6](prompts/01-ai-methods/rtf-meta-prompt-system-v06.md) | active | 元提示词 |
+| AI方法 | 元提示词 | [智能元提示词设计与优化系统 V1.0](prompts/01-ai-methods/rtf-meta-prompt-system-v1.md) | active | 元提示词 |
 | AI方法 | 反编译 | [视频反编译：短视频截图拆解分析](prompts/01-ai-methods/video-reverse-engineering.md) | active | 视频反编译 |
 | AI方法 | 反向工程 | [网页逆向工程与泛化生成提示词](prompts/01-ai-methods/webpage-reverse-engineering.md) | active | 网页逆向工程 |
 | AI工作 | 企业调研 | [从0到1：用AI深度调研企业的完整方法论](prompts/02-ai-work/company-research-methodology.md) | active | 企业调研 |

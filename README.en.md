@@ -2,7 +2,7 @@
 
 [English Prompt Library](prompts-en/README.md) · [Web Navigation](https://yaojingang.github.io/yao-open-prompts/) · [GitHub Repository](https://github.com/yaojingang/yao-open-prompts)
 
-Yao Open Prompts is an open-source prompt library for practical AI work, learning, content creation, marketing, and everyday scenarios.
+Yao Open Prompts is an open-source bilingual prompt library for prompt engineering, practical AI work, learning, content creation, marketing, and everyday scenarios.
 
 The main repository is organized around the Chinese prompt library. This English README is the entry point for the full English mirror.
 
@@ -11,6 +11,10 @@ The main repository is organized around the Chinese prompt library. This English
 **[118 English Prompts](prompts-en/README.md)**: one English file for every Chinese prompt file in `prompts/`, using the same relative path under `prompts-en/`.
 
 Each English prompt is stored as an independent Markdown file and points back to its matching Chinese source file through the `source_section` frontmatter field.
+
+## Featured Prompt
+
+**[Intelligent Meta-Prompt Design and Optimization System V1.0](prompts-en/01-ai-methods/rtf-meta-prompt-system-v1.md)**: a bidirectional prompt compiler that generates prompts from requirements and diagnoses, restructures, and optimizes existing prompts. It includes deployment adaptation, evidence-based quality review, boundary controls, and design-level static testing.
 
 ## Directory
 

@@ -53,7 +53,7 @@ CATEGORY_COLORS = {
 
 REPRESENTATIVE_SLUGS = {
     "AI方法": [
-        "rtf-meta-prompt-system-v06",
+        "rtf-meta-prompt-system-v1",
         "meta-prompt-rtf-generator",
         "interactive-rtf-meta-prompt-system",
         "lisp-rtf-meta-prompt-v08",
@@ -135,8 +135,12 @@ REPRESENTATIVE_SLUGS = {
 }
 
 FEATURED_SLUGS = [
-    "rtf-meta-prompt-system-v06",
+    "rtf-meta-prompt-system-v1",
 ]
+
+FEATURED_NOTES_URLS = {
+    "rtf-meta-prompt-system-v1": f"{REPO_URL}/blob/main/references/rtf-meta-prompt-system-v1-upgrade-notes.md",
+}
 
 COLLECTIONS = [
     {
@@ -285,6 +289,13 @@ def build_featured(prompts: list[Prompt]) -> str:
         prompt = by_slug.get(slug)
         if not prompt:
             continue
+        notes_url = FEATURED_NOTES_URLS.get(slug)
+        notes_link = ""
+        if notes_url:
+            notes_link = (
+                f'<a class="button secondary" href="{escape(notes_url)}" '
+                'target="_blank" rel="noreferrer">查看 V1.0 升级说明</a>'
+            )
         cards.append(
             f"""
             <article class="featured-card">
@@ -298,6 +309,7 @@ def build_featured(prompts: list[Prompt]) -> str:
                 <span>{escape(prompt.category)}</span>
                 <strong>{escape(prompt.version)}</strong>
                 <a class="button" href="{escape(prompt.github_url)}" target="_blank" rel="noreferrer">查看推荐 Prompt</a>
+                {notes_link}
               </div>
             </article>
             """
@@ -378,8 +390,8 @@ def build_html(prompts: list[Prompt]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yao Open Prompts - 类型与代表提示词</title>
-  <meta name="description" content="Yao Open Prompts 的提示词类型与代表提示词导航页。">
+  <title>Yao Open Prompts - 中英双语 AI 提示词导航</title>
+  <meta name="description" content="面向提示词工程、工作、学习、内容与营销场景的中英双语 AI 提示词库。">
   <style>
     :root {{
       color-scheme: light;
@@ -915,7 +927,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；新增的 36 个内容与运营提示词已直接并入 AI内容目录，AI营销目录也新增 25 个 GEO 实战模板和 GEO文章AI友好化改造提示词，并同步提供 118 个英文提示词镜像入口。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词设计与优化系统 V1.0」，支持从需求生成提示词，也支持诊断、重构和优化已有提示词；仓库同步提供 118 个英文提示词镜像入口。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
